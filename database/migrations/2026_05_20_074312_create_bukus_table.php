@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->text("penulis");
             $table->text("judul");
+            $table->text("deskripsi");
             $table->text("penerbit");
             $table->integer("harga");
             $table->timestamps();

@@ -19,6 +19,8 @@ class BukuSeeder extends Seeder
                 'judul' => $faker->sentence,
                 'penulis' => $faker->name,
                 'penerbit' => $faker->name,
+                'deskripsi' => $faker->paragraphs(3, true),
+                'harga' => $faker->numberBetween(10000, 200000),
             ]);
         }
     }
