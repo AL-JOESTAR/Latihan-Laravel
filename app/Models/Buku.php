@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Buku extends Model
 {
-    protected $guraded = [];
+    use HasFactory;
+
+    protected $guarded = [];
 
      public function orderItems()
     {

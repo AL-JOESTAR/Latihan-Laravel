@@ -13,15 +13,6 @@ class BukuSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = \Faker\Factory::create('id_ID');
-        for ($i = 0; $i < 10; $i++) {
-            Buku::create([
-                'judul' => $faker->sentence,
-                'penulis' => $faker->name,
-                'penerbit' => $faker->name,
-                'deskripsi' => $faker->paragraphs(3, true),
-                'harga' => $faker->numberBetween(10000, 200000),
-            ]);
-        }
+        Buku::factory(5)->create();
     }
 }
